@@ -5,9 +5,10 @@ import getNumRandom from "./utils/getNumRandom";
 import Randomquote from "./component/Randomquote";
 import BtnPhrase from "./component/BtnPhrase";
 import photos from "./utils/photos.json";
-import Footer from "./component/Footer";
+
 
 function App() {
+  
   const indexRandom = getNumRandom(quotes.length);
 
   const [phrase, setPhrase] = useState(quotes[indexRandom]);
@@ -21,9 +22,9 @@ function App() {
   return (
     <div
       style={objStyle}
-      className="min-h-screen flex justify-center items-center flex-col bg-cover bg-center"
+      className="min-h-screen flex justify-center m-auto p-2 items-center flex-col bg-cover bg-center"
     >
-      <h1 className="text-3xl box flex m-5 p-2 font-serif font-bold text-zinc-300">
+      <h1 className="text-3xl box flex m-5 p-2 font-serif font-bold bg-slate-50">
       Motivation Phrase
       </h1>
 
@@ -34,10 +35,6 @@ function App() {
       <section className="m-10 p-2 ">
       <BtnPhrase  setPhrase={setPhrase} setphoto={setphoto} />
       </section>
-
-      <footer>
-< Footer />
-      </footer>
     </div>
   );
 }

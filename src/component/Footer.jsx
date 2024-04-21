@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-    <img src="./" alt="" />
+    <img src="../" alt="" />
     </div>
   )
 }
