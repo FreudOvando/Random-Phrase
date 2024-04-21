@@ -24,7 +24,7 @@ function App() {
       style={objStyle}
       className="min-h-screen flex justify-center m-auto p-2 items-center flex-col bg-cover bg-center"
     >
-      <h1 className="text-3xl box flex m-5 p-2 font-serif font-bold bg-slate-50">
+      <h1 className="text-3xl box flex m-5 p-2 font-serif font-bold rounded-xl text-stone-50 bg-black border-solid">
       Motivation Phrase
       </h1>
 
